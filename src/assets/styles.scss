@@ -1,0 +1,36 @@
+// penyimpanan color
+$colorWhite: #fff;
+$colorRed: rgb(255, 0, 0);
+$colorBlue: rgb(72, 0, 255);
+$colorAqua: rgb(0, 255, 242);
+$colorNavy: rgb(11, 114, 113);
+
+body {
+  background-color: black;
+}
+// color rgba
+$g-blue: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%, rgba(17, 0, 255, 1) 100%);
+
+:root {
+  --gradient1: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%, rgba(17, 0, 255, 1) 100%);
+  --gradient2: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 184, 255, 1) 0%, rgba(0, 255, 196, 1) 100%);
+}
+.font1 {
+  font-family: "font1";
+  background: var(--gradient1);
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+}
+.text2 {
+  font-size: 36px;
+}
+.ari-footer {
+  background: var(--gradient1);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  letter-spacing: 10px;
+}
