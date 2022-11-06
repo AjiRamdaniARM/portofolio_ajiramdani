@@ -27,7 +27,6 @@ import C1 from "../assets/image/certificate1.jpg";
 import Icon2 from "../assets/svg/icon2.svg";
 import Icon3 from "../assets/svg/icon3.svg";
 import robotiks from "../assets/image/robotik.jpg";
-import Tombolnavigasi from "./tombolnavigasi";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 // akhir import
@@ -402,9 +401,6 @@ const Home = () => {
           </div>
         </div>
       </footer>
-
-      {/* tombol navigasi home */}
-      <Tombolnavigasi />
     </div>
   );
 };

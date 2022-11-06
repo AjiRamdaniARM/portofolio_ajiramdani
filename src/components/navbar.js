@@ -5,14 +5,14 @@ import "../assets/styles.scss";
 const Navbarari = () => {
   const [navbar, setNavbar] = useState(false);
   return (
-    <nav className="fixed w-full bg-black shadow">
+    <nav className="fixed z-10 w-full bg-black shadow">
       <div className="mx-auto justify-between px-4 md:flex md:items-center md:px-8 lg:max-w-7xl">
         <div>
           <div className="flex items-center justify-between py-3 md:block md:py-5">
             <a href="javascript:void(0)">
               <h2 className="text-1xl font-bold hover:text-black" style={{ color: "white", fontFamily: "ubuntu-bold" }}>
                 {" "}
-                AJI RAMDANI - ARI{" "}
+                AJI <color className="font-semibold text-blue-700">RAMDANI - ARI </color>
               </h2>
             </a>
             <div className="md:hidden">
@@ -37,7 +37,7 @@ const Navbarari = () => {
         <div>
           <div className={`mt-8 flex-1 justify-self-center pb-3 md:mt-0 md:block md:pb-0 ${navbar ? "block" : "hidden"}`}>
             <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-white hover:text-indigo-200">
+              <li className="active">
                 <a href="/">Home</a>
               </li>
               <li className="text-white hover:text-indigo-200">

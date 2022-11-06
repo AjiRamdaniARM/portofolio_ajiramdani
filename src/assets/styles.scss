@@ -34,3 +34,17 @@ $g-blue: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%,
   -webkit-background-clip: text;
   letter-spacing: 10px;
 }
+.active {
+  background-color: rgb(7, 130, 238);
+  border-radius: 5px;
+  display: flex;
+  color: #fff;
+  width: 15vh;
+  height: 6vh;
+  align-items: center;
+  justify-content: center;
+}
+.active:hover {
+  background-color: #fff;
+  color: black;
+}
