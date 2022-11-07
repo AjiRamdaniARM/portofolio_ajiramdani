@@ -10,7 +10,7 @@ const Navbarari = () => {
         <div>
           <div className="flex items-center justify-between py-3 md:block md:py-5">
             <a href="javascript:void(0)">
-              <h2 className="text-1xl font-bold hover:text-black" style={{ color: "white", fontFamily: "ubuntu-bold" }}>
+              <h2 className="text-2xl font-bold hover:text-black" style={{ color: "white", fontFamily: "ubuntu-bold" }}>
                 {" "}
                 AJI <color className="font-semibold text-blue-500">RAMDANI - ARI </color>
               </h2>
