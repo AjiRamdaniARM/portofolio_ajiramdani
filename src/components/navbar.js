@@ -12,7 +12,7 @@ const Navbarari = () => {
             <a href="javascript:void(0)">
               <h2 className="text-1xl font-bold hover:text-black" style={{ color: "white", fontFamily: "ubuntu-bold" }}>
                 {" "}
-                AJI <color className="font-semibold text-blue-700">RAMDANI - ARI </color>
+                AJI <color className="font-semibold text-blue-500">RAMDANI - ARI </color>
               </h2>
             </a>
             <div className="md:hidden">

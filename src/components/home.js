@@ -3,14 +3,13 @@ import React, { useRef } from "react";
 import logo from "../assets/image/logo.png";
 import "../style.css";
 import Typewriter from "typewriter-effect";
-import coding from "../assets/image/coding.png";
+import coding from "../assets/svg/coding.svg";
 import Github from "../assets/svg/github.svg";
-import Coding from "./Coding";
 import Twitter from "../assets/svg/twitter.svg";
 import Facebook from "../assets/svg/facebook.svg";
 import Linkdin from "../assets/svg/linkdn.svg";
 import instgram from "../assets/svg/instagram.svg";
-import Design from "../assets/image/design.jpg";
+import Design from "../assets/svg/design.svg";
 import C3 from "../assets/image/scg.jpg";
 import C4 from "../assets/image/stikesmi1.jpg";
 import pdf3 from "../assets/downloads/scg.pdf";
@@ -21,12 +20,12 @@ import pdf2 from "../assets/downloads/certificate nasional.pdf";
 import "../assets/styles.scss";
 import pdf1 from "../assets/downloads/AJI RAMDANI.pdf";
 import "../assets/style2.css";
-import ui from "../assets/image/ui.jpg";
+import ui from "../assets/svg/uiux.svg";
 import Icon1 from "../assets/svg/icon1.svg";
 import C1 from "../assets/image/certificate1.jpg";
 import Icon2 from "../assets/svg/icon2.svg";
 import Icon3 from "../assets/svg/icon3.svg";
-import robotiks from "../assets/image/robotik.jpg";
+import robotiks from "../assets/svg/robotik.svg";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 // akhir import
@@ -63,7 +62,7 @@ const Home = () => {
   return (
     <div className="Home">
       {/* sectiom hero */}
-      <section id="Home" className="pt-36 ">
+      <section id="Home" className="pt-36 md:pt-10 ">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2">
@@ -89,9 +88,13 @@ const Home = () => {
               </p>
               <a
                 href="https://api.whatsapp.com/send?phone=6289508742700&text=Halo%20Kak%20ARI%20%2C%20Apa%20kabarnya%20%3F"
-                className="rounded-lg bg-blue-500 py-3 px-8 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg"
+                className="rounded-lg bg-blue-500 py-3 px-5 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg"
               >
                 Hubungi Saya
+              </a>
+              &nbsp;
+              <a href="https://chat.whatsapp.com/EX1dmwekW0k0PZcHJaxN5R" className="rounded-lg bg-slate-500 py-3 px-8 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg">
+                Gabung Grup
               </a>
             </div>{" "}
             <div className="w-full self-end px-4 lg:w-1/2">
@@ -104,7 +107,7 @@ const Home = () => {
       </section>
       {/* end section */}
       {/* About section*/}
-      <section id="About" className="pt-36 pb-32">
+      <section id="About" className="pt-36 pb-32 md:pt-10">
         <div className="conteiner">
           <div className="flex flex-wrap">
             <div className="mb-10 w-full px-4 lg:w-1/2">
@@ -181,11 +184,11 @@ const Home = () => {
       </section>
       {/* end About section*/}
       {/* start section */}
-      <section id="portofolio" className=" pt-36 pb-16">
+      <section id="portofolio" className=" pt-30 pb-16 md:pt-1">
         <div className="container">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 max-w-xl text-center">
-              <h2 className="text-2xl font-bold text-white">Skill</h2>
+              <h2 className="text-2xl font-bold text-white md:text-3xl">Skill</h2>
             </div>
           </div>
           <div className="flex w-full flex-wrap justify-center px-4 ">
