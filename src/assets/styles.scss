@@ -48,3 +48,78 @@ $g-blue: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%,
   background-color: #fff;
   color: black;
 }
+.jasa {
+  background: linear-gradient(90deg, rgba(254, 0, 255, 1) 0%, rgba(0, 11, 255, 1) 100%);
+}
+.text-teman {
+  color: rgb(239, 4, 220);
+}
+.coding-jasa {
+  background: linear-gradient(90deg, rgba(0, 11, 255, 1) 0%, rgba(0, 161, 255, 1) 97%);
+}
+.color-co {
+  color: #ff009d;
+}
+.Animasi1 {
+  animation-name: object1;
+  animation-duration: 4s;
+  animation-iteration-count: 3;
+}
+
+@keyframes object1 {
+  0% {
+    left: 0;
+    top: 0;
+  }
+  25% {
+    left: 200px;
+    top: 0;
+  }
+  50% {
+    right: 200px;
+  }
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.modal {
+  font-size: 12px;
+}
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid gray;
+  font-size: 18px;
+  text-align: center;
+  padding: 5px;
+}
+.modal > .content {
+  width: 100%;
+  padding: 10px 5px;
+}
+.modal > .actions {
+  margin: auto;
+}
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  text-align: center;
+}
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+.image {
+  width: 100px;
+}

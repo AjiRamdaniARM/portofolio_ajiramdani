@@ -1,9 +1,9 @@
 // import dari library
-import React, { useRef } from "react";
-import logo from "../assets/image/logo.png";
+import React, { useEffect, useRef, useState } from "react";
 import "../style.css";
 import Typewriter from "typewriter-effect";
 import coding from "../assets/svg/coding.svg";
+import Logo2004 from "../assets/image/aji.png";
 import Github from "../assets/svg/github.svg";
 import Twitter from "../assets/svg/twitter.svg";
 import Facebook from "../assets/svg/facebook.svg";
@@ -16,11 +16,13 @@ import pdf3 from "../assets/downloads/scg.pdf";
 import pdf4 from "../assets/downloads/stikesmi.pdf";
 import Youtube from "../assets/svg/youtube.svg";
 import C2 from "../assets/image/certificate3.jpg";
+import Blob from "../assets/image/blob.png";
 import pdf2 from "../assets/downloads/certificate nasional.pdf";
 import "../assets/styles.scss";
 import pdf1 from "../assets/downloads/AJI RAMDANI.pdf";
 import "../assets/style2.css";
 import ui from "../assets/svg/uiux.svg";
+import Animasi1 from "../assets/image/animasi1.svg";
 import Icon1 from "../assets/svg/icon1.svg";
 import C1 from "../assets/image/certificate1.jpg";
 import Icon2 from "../assets/svg/icon2.svg";
@@ -28,9 +30,60 @@ import Icon3 from "../assets/svg/icon3.svg";
 import robotiks from "../assets/svg/robotik.svg";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
+import Popup from "reactjs-popup";
+
+import Button from "@mui/material/Button";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogContentText from "@mui/material/DialogContentText";
+import DialogTitle from "@mui/material/DialogTitle";
+import Slide from "@mui/material/Slide";
+import { Player, Controls } from "@lottiefiles/react-lottie-player";
+import Content from "../components/popup";
+const Transition = React.forwardRef(function Transition(props, ref) {
+  return <Slide direction="up" ref={ref} {...props} />;
+});
 // akhir import
 
 const Home = () => {
+  const [loading, setLoading] = useState(undefined);
+  const [done, setDone] = useState(undefined);
+  const [cat, setCat] = useState("");
+
+  useEffect(() => {
+    getCat();
+  }, []);
+
+  const getCat = () => {
+    setLoading(undefined);
+    setDone(undefined);
+    setBuka(false);
+
+    setTimeout(() => {
+      fetch(setBuka(true))
+        .then((res) => res.json())
+        .then((data) => {
+          setCat(data.file);
+          setLoading(true);
+          setTimeout(() => {
+            setDone(true);
+          }, 1000);
+        })
+        .catch((err) => console.log(err));
+    }, 2200);
+  };
+
+  const [open, setOpen] = React.useState(undefined);
+  const [buka, setBuka] = React.useState(undefined);
+  // const handleClickOpen = () => {
+  //   setOpen(true);
+  // };
+
+  const handleClose = () => {
+    setOpen(false);
+  };
+
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -58,19 +111,74 @@ const Home = () => {
     );
     e.target.reset();
   };
+  const nama = "Membuka jasa Graphic Design ( Banner , Poster , Thumbnail , Sticker , Thumbler , Mockup , Kemasan ). UI / UX Design ( Website, Aplikasi Android )";
   const alertbarRef = useRef(null);
+  const Alert = () => {
+    Swal.fire({
+      title: "<h1 style='color:#00a1ff'>Open Jasa</h1>",
+      text: nama,
+      icon: "warning",
+      buttons: true,
+      dangerMode: true,
+    });
+  };
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+  };
+
   return (
     <div className="Home">
+    
+      <div>
+        {!done ? (
+          <Dialog
+            PaperProps={{
+              style: {
+                backgroundColor: "transparent",
+                boxShadow: "none",
+              },
+            }}
+            className="bg-black/50"
+            TransitionComponent={Transition}
+            keepMounted
+            onClose={handleClose}
+            aria-describedby="alert-dialog-slide-description"
+          >
+            <Player loading={loading} options={defaultOptions} src="https://assets10.lottiefiles.com/packages/lf20_p8bfn5to.json" style={{ height: "300px", width: "300px" }}></Player>
+            {/* {!done ?} */}
+            {/* {isLoading && <Player options={defaultOptions} src="https://assets10.lottiefiles.com/packages/lf20_p8bfn5to.json" style={{ height: "300px", width: "300px" }}></Player>}{" "} */}
+            {/* <DialogTitle className="color-co">{"Open Jasa Graphic Design"}</DialogTitle>
+<DialogContent>
+ <div className="Animasi1">
+   {" "}
+   <img src={Animasi1} />
+ </div>
+
+ <DialogContentText id="alert-dialog-slide-description">{nama}</DialogContentText>
+</DialogContent>
+<DialogActions>
+ <Button onClick={handleClose}>Tidak Jadi</Button>
+ <Button onClick={handleClose}>Lanjut</Button>
+</DialogActions> */}
+          </Dialog>
+        ) : (
+          <div>{cat}</div>
+        )}
+      </div>
+
+      {/* end animasi Popup */}
+
       {/* sectiom hero */}
-      <section id="Home" className="pt-36 md:pt-10 ">
+      <section id="Home" className="pt-10 md:pt-5 ">
         <div className="container">
           <div className="flex flex-wrap">
             <div className="w-full self-center px-4 lg:w-1/2">
               <h1 className="text2 block font-semibold text-white md:text-xl lg:text-2xl">
                 {" "}
-                Hello,<span className="font1 text-rgblue mt-1 block text-4xl font-bold lg:text-5xl"> I Am Aji Ramdani</span>
+                Hello,<span className="font1 text-rgblue mt-1  block text-4xl font-bold lg:text-5xl"> I Am Aji Ramdani</span>
               </h1>
-              <p className="text-secondary mb-5 text-lg font-medium text-white md:text-sm">
+              <p className="text-secondary mb-5 text-lg font-medium text-white md:mt-2 md:text-sm">
                 Graphic Designer || UI UX Designer || Web Develover
                 <span className="mb-12 block font-bold">
                   School Majoring In
@@ -86,20 +194,21 @@ const Home = () => {
                   </span>
                 </span>
               </p>
-              <a
-                href="https://api.whatsapp.com/send?phone=6289508742700&text=Halo%20Kak%20ARI%20%2C%20Apa%20kabarnya%20%3F"
-                className="rounded-lg bg-blue-500 py-3 px-5 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg"
-              >
-                Hubungi Saya
-              </a>
+              <Popup modal trigger={ <button className="jasa rounded-lg py-3 px-5 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg"> Jasa Design</button>} >
+              {close => <Content close={close} />}
+              </Popup>
               &nbsp;
-              <a href="https://chat.whatsapp.com/EX1dmwekW0k0PZcHJaxN5R" className="rounded-lg bg-slate-500 py-3 px-8 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg">
-                Gabung Grup
+              <a href="https://chat.whatsapp.com/EX1dmwekW0k0PZcHJaxN5R" className="coding-jasa rounded-lg py-3 px-8 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg">
+                Jasa Coding
               </a>
             </div>{" "}
             <div className="w-full self-end px-4 lg:w-1/2">
               <div className=" relative mt-10 lg:right-0 lg:mt-9">
-                <img src={logo} alt="ARI" className=" mx-auto max-w-full" />
+                <img src={Logo2004} alt="ARI" className=" z-10 mx-auto max-w-full  " />
+                {/* <span className=" absolute bottom-0 -z-10 pt-2">
+                  {" "}
+                  <img src={Blob} alt="shape" className="mx-auto mt-0 max-w-full " />
+                </span> */}
               </div>
             </div>
           </div>
@@ -120,7 +229,7 @@ const Home = () => {
               </p>
             </div>{" "}
             <div className="w-full px-4 lg:w-1/2">
-              <h3 className="mb-4 text-2xl font-semibold text-white ">Mari Berteman</h3>
+              <h3 className="text-teman mb-4 text-2xl font-semibold ">Mari Berteman</h3>
               <p className="mb-6 text-base font-medium text-white lg:text-lg"> let's be good friends so that we can establish closer brotherhood, by following each other on social media. Social media links are below</p>
               <div className="flex items-center">
                 {/* github */}
