@@ -20,10 +20,10 @@ const Navbarari = () => {
           <Link to="portofolio" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center">
             <BiUser />
           </Link>
-          <Link className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center">
+          <Link to="contact" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center">
             <RiContactsLine />
           </Link>
-          <Link className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center">
+          <Link to="project" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center">
             <BsBriefcase />
           </Link>
         </div>

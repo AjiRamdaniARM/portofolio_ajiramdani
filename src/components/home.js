@@ -2,42 +2,31 @@
 import React, { useEffect, useRef, useState } from "react";
 import "../style.css";
 import Typewriter from "typewriter-effect";
-import coding from "../assets/svg/coding.svg";
+
 import Logo2004 from "../assets/image/aji.png";
 import Github from "../assets/svg/github.svg";
 import Twitter from "../assets/svg/twitter.svg";
 import Facebook from "../assets/svg/facebook.svg";
 import Linkdin from "../assets/svg/linkdn.svg";
 import instgram from "../assets/svg/instagram.svg";
-import Design from "../assets/svg/design.svg";
 import C3 from "../assets/image/scg.jpg";
 import C4 from "../assets/image/stikesmi1.jpg";
 import pdf3 from "../assets/downloads/scg.pdf";
 import pdf4 from "../assets/downloads/stikesmi.pdf";
 import Youtube from "../assets/svg/youtube.svg";
 import C2 from "../assets/image/certificate3.jpg";
-import Blob from "../assets/image/blob.png";
 import pdf2 from "../assets/downloads/certificate nasional.pdf";
 import "../assets/styles.scss";
 import pdf1 from "../assets/downloads/AJI RAMDANI.pdf";
 import "../assets/style2.css";
-import ui from "../assets/svg/uiux.svg";
-import Animasi1 from "../assets/image/animasi1.svg";
 import Icon1 from "../assets/svg/icon1.svg";
 import C1 from "../assets/image/certificate1.jpg";
 import Icon2 from "../assets/svg/icon2.svg";
 import Icon3 from "../assets/svg/icon3.svg";
-import robotiks from "../assets/svg/robotik.svg";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import Popup from "reactjs-popup";
-
-import Button from "@mui/material/Button";
 import Dialog from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
 import Slide from "@mui/material/Slide";
 import { Player, Controls } from "@lottiefiles/react-lottie-player";
 import Content from "../components/popup";
@@ -203,8 +192,8 @@ const Home = () => {
               </a>
             </div>{" "}
             <div className="w-full self-end px-4 lg:w-1/2">
-              <div className=" relative mt-10 lg:right-0 lg:mt-9">
-                <img src={Logo2004} alt="ARI" className=" z-10 mx-auto max-w-full  " />
+              <div className=" relative mt-10 lg:right-0 lg:mt-0">
+                <img src={Logo2004} width="800" alt="ARI" className=" z-10 mx-auto max-w-full  " />
                 {/* <span className=" absolute bottom-0 -z-10 pt-2">
                   {" "}
                   <img src={Blob} alt="shape" className="mx-auto mt-0 max-w-full " />
@@ -310,7 +299,7 @@ const Home = () => {
         </div>
       </section>
       {/* project section  */}
-      <section className="bg-gray-800 pt-36 pb-32" id="clients">
+      <section className="bg-gray-800 pt-36 pb-32" id="project">
         <div className="container">
           <div className="w-full px-4">
             <div className="mx-auto mb-16 max-w-xl text-center">
@@ -319,41 +308,143 @@ const Home = () => {
             </div>
           </div>
           <div className="flex w-full flex-wrap justify-center px-4">
-            <div className="mb-12 p-4 transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg md:w-1/2">
-              <a href="/coding">
-                <div className="overflow-hidden rounded-md shadow-md">
-                  <img src={coding} alt="landing-coding" width="w-full" />
-                  <h3 className="mb-5 mb-3 text-xl font-semibold text-white"> Project Coding</h3>
-                  <p className="text-base font-medium text-gray-500">Kumpulan Project-project hasil ngoding</p>
+
+            {/* CARD PROGRAMMER */}
+              <div className="Container-card1">
+                
+            
+              <img src="https://media.tenor.com/1mwdqr51emcAAAAM/test-typing.gif" class="w-full object-cover object-center rounded-lg shadow-md" />    
+    <a href="/coding">
+    <div class="relative px-4 -mt-16  ">
+      <div class="card2 p-6 rounded-lg shadow-lg">
+       <div class="flex items-baseline">
+         <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+           Project
+         </span>
+         <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+       2 baths  &bull; 3 rooms
+     </div>  
+       </div>
+       
+       <h4 class="mt-1 text-xl font-semibold uppercase leading-tight  truncate">PROGRAMMER</h4>
+    
+     <div class="mt-1">
+       $1800
+       <span class="text-gray-600 text-sm">   /wk</span>
+     </div>
+     <div class="mt-4">
+       <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
+       <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+     </div>  
+     </div>
+ 
+     
+     </div>
+     </a>
+              </div>
+
+              {/* CARD GRAPHIC DESIGN */}
+              <div className="Container-card1 mt-5">
+                
+            
+                <img src="https://media.tenor.com/pqE49x-P8UIAAAAM/dev-jokes-designer-and-client.gif" class="w-full object-cover object-center rounded-lg shadow-md" />    
+      
+      <div class="relative px-4 -mt-16  ">
+        <div class="card2 p-6 rounded-lg shadow-lg">
+         <div class="flex items-baseline">
+           <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+             New
+           </span>
+           <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+         2 baths  &bull; 3 rooms
+       </div>  
+         </div>
+         
+         <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">GRAPHIC DESIGN</h4>
+      
+       <div class="mt-1">
+         $1800
+         <span class="text-gray-600 text-sm">   /wk</span>
+       </div>
+       <div class="mt-4">
+         <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
+         <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+       </div>  
+       </div>
+   
+       
+       </div>
                 </div>
-              </a>
+            <div className="mb-12 p-4 transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg md:w-1/2">
+               {/* CARD UI/UX DSIGN */}
+               <div className="Container-card1">
+                
+            
+                <img src="https://media.tenor.com/dg2ESktyq0wAAAAd/animation-creativedesign.gif" class="w-full object-cover object-center rounded-lg shadow-md" />    
+      <a href="/coding">
+      <div class="relative px-4 -mt-16  ">
+        <div class="card2 p-6 rounded-lg shadow-lg">
+         <div class="flex items-baseline">
+           <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+             Project
+           </span>
+           <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+         2 baths  &bull; 3 rooms
+       </div>  
+         </div>
+         
+         <h4 class="mt-1 text-xl font-semibold uppercase leading-tight  truncate">UI/UX DESIGN</h4>
+      
+       <div class="mt-1">
+         $1800
+         <span class="text-gray-600 text-sm">   /wk</span>
+       </div>
+       <div class="mt-4">
+         <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
+         <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+       </div>  
+       </div>
+   
+       
+       </div>
+       </a>
+                </div>
+  
             </div>
             <div className="mb-12 p-4 transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg md:w-1/2">
-              <a href="/design">
-                <div className="overflow-hidden rounded-md shadow-md">
-                  <img src={Design} alt="landing-coding" width="w-full" />
-                  <h3 className="mb-5 mb-3 text-xl font-semibold text-white"> Project Design Graphic</h3>
-                  <p className="text-base font-medium text-gray-500">Kumpulan Project-project hasil Ngedesign</p>
+             {/* CARD UI/UX DSIGN */}
+             <div className="Container-card1">
+                
+            
+                <img src="https://media.tenor.com/4dVRDZYVx2gAAAAd/robot.gif" class="w-full object-cover object-center rounded-lg shadow-md" />    
+      <a href="/coding">
+      <div class="relative px-4 -mt-16  ">
+        <div class="card2 p-6 rounded-lg shadow-lg">
+         <div class="flex items-baseline">
+           <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
+             Project
+           </span>
+           <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
+         2 baths  &bull; 3 rooms
+       </div>  
+         </div>
+         
+         <h4 class="mt-1 text-xl font-semibold uppercase leading-tight  truncate">ROBOTIK</h4>
+      
+       <div class="mt-1">
+         $1800
+         <span class="text-gray-600 text-sm">   /wk</span>
+       </div>
+       <div class="mt-4">
+         <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
+         <span class="text-sm text-gray-600">(based on 234 ratings)</span>
+       </div>  
+       </div>
+   
+       
+       </div>
+       </a>
                 </div>
-              </a>
-            </div>
-            <div className="mb-12 p-4 transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg md:w-1/2">
-              <a href="/uiux">
-                <div className="overflow-hidden rounded-md shadow-md">
-                  <img src={ui} alt="landing-coding" width="w-full" />
-                  <h3 className="mb-5 mb-3 text-xl font-semibold text-white"> Project UI UX DESIGN</h3>
-                  <p className="text-base font-medium text-gray-500">Kumpulan Project-project hasil Ngedesign web, aplikasi</p>
-                </div>
-              </a>
-            </div>
-            <div className="mb-12 p-4 transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg md:w-1/2">
-              <a onClick={() => alert("belum ada project tersedia")}>
-                <div className="overflow-hidden rounded-md shadow-md">
-                  <img src={robotiks} alt="landing-coding" width="w-full" />
-                  <h3 className="mb-5 mb-3 text-xl font-semibold text-white"> Project Robotics</h3>
-                  <p className="text-base font-medium text-gray-500">Kumpulan Project-project hasil bikin robots</p>
-                </div>
-              </a>
             </div>
           </div>
         </div>
