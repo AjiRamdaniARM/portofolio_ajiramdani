@@ -2,7 +2,10 @@
 @font-face /*perintah untuk memanggil font eksternal*/ {
   font-family: "font1"; /*memberikan nama bebas untuk font*/
   src: url("./assets/font/font1.ttf"); /*memanggil file font eksternalnya di folder nexa*/
+  font-family: 'Ubuntu';
+  src: url("./assets/font/Ubuntu-Bold.ttf");
 }
+
 body {
   user-select: none;
   -moz-user-select: none;

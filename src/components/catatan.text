@@ -1,0 +1,40 @@
+   <div className="flex flex-wrap">
+            <div className="w-full self-center px-4 lg:w-1/2">
+              <h1 className="text2 block font-semibold text-white md:text-xl lg:text-2xl">
+                {" "}
+                Hello,<span className="font1 text-rgblue mt-1  block text-4xl font-bold lg:text-5xl"> I Am Aji Ramdani</span>
+              </h1>
+              <p className="text-secondary mb-5 text-lg font-medium text-white md:mt-2 md:text-sm">
+                Graphic Designer || UI UX Designer || Web Develover
+                <span className="mb-12 block font-bold">
+                  School Majoring In
+                  <span className="text-blue-500">
+                    <Typewriter
+                      options={{
+                        autoStart: true,
+                        loop: true,
+                        delay: 100,
+                        strings: ["Sofware Enginering", "Smks Terpadu Ibadurrahman"],
+                      }}
+                    />
+                  </span>
+                </span>
+              </p>
+              <Popup modal trigger={ <button className="jasa rounded-lg py-3 px-5 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg"> Jasa Design</button>} >
+              {close => <Content close={close} />}
+              </Popup>
+              &nbsp;
+              <a href="https://chat.whatsapp.com/EX1dmwekW0k0PZcHJaxN5R" className="coding-jasa rounded-lg py-3 px-8 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg">
+                Jasa Coding
+              </a>
+            </div>{" "}
+            <div className="w-full self-end px-4 lg:w-1/2">
+              <div className=" relative mt-10 lg:right-0 lg:mt-0">
+                <img src={Logo2004} width="800" alt="ARI" className=" z-10 mx-auto max-w-full  " />
+                {/* <span className=" absolute bottom-0 -z-10 pt-2">
+                  {" "}
+                  <img src={Blob} alt="shape" className="mx-auto mt-0 max-w-full " />
+                </span> */}
+              </div>
+            </div>
+          </div>

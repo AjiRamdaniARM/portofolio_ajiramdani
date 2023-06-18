@@ -1,9 +1,6 @@
 // import dari library
 import React, { useEffect, useRef, useState } from "react";
 import "../style.css";
-import Typewriter from "typewriter-effect";
-
-import Logo2004 from "../assets/image/aji.png";
 import Github from "../assets/svg/github.svg";
 import Twitter from "../assets/svg/twitter.svg";
 import Facebook from "../assets/svg/facebook.svg";
@@ -14,22 +11,14 @@ import C4 from "../assets/image/stikesmi1.jpg";
 import pdf3 from "../assets/downloads/scg.pdf";
 import pdf4 from "../assets/downloads/stikesmi.pdf";
 import Youtube from "../assets/svg/youtube.svg";
-import C2 from "../assets/image/certificate3.jpg";
-import pdf2 from "../assets/downloads/certificate nasional.pdf";
-import "../assets/styles.scss";
-import pdf1 from "../assets/downloads/AJI RAMDANI.pdf";
 import "../assets/style2.css";
+import Object from "../assets/image/AJI.png"
 import Icon1 from "../assets/svg/icon1.svg";
-import C1 from "../assets/image/certificate1.jpg";
 import Icon2 from "../assets/svg/icon2.svg";
 import Icon3 from "../assets/svg/icon3.svg";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
-import Popup from "reactjs-popup";
-import Dialog from "@mui/material/Dialog";
 import Slide from "@mui/material/Slide";
-import { Player, Controls } from "@lottiefiles/react-lottie-player";
-import Content from "../components/popup";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -118,92 +107,24 @@ const Home = () => {
 
   return (
     <div className="Home">
-    
-      <div>
-        {!done ? (
-          <Dialog
-            PaperProps={{
-              style: {
-                backgroundColor: "transparent",
-                boxShadow: "none",
-              },
-            }}
-            className="bg-black/50"
-            TransitionComponent={Transition}
-            keepMounted
-            onClose={handleClose}
-            aria-describedby="alert-dialog-slide-description"
-          >
-            <Player loading={loading} options={defaultOptions} src="https://assets10.lottiefiles.com/packages/lf20_p8bfn5to.json" style={{ height: "300px", width: "300px" }}></Player>
-            {/* {!done ?} */}
-            {/* {isLoading && <Player options={defaultOptions} src="https://assets10.lottiefiles.com/packages/lf20_p8bfn5to.json" style={{ height: "300px", width: "300px" }}></Player>}{" "} */}
-            {/* <DialogTitle className="color-co">{"Open Jasa Graphic Design"}</DialogTitle>
-<DialogContent>
- <div className="Animasi1">
-   {" "}
-   <img src={Animasi1} />
- </div>
-
- <DialogContentText id="alert-dialog-slide-description">{nama}</DialogContentText>
-</DialogContent>
-<DialogActions>
- <Button onClick={handleClose}>Tidak Jadi</Button>
- <Button onClick={handleClose}>Lanjut</Button>
-</DialogActions> */}
-          </Dialog>
-        ) : (
-          <div>{cat}</div>
-        )}
-      </div>
-
-      {/* end animasi Popup */}
-
-      {/* sectiom hero */}
+      {/* sectiom Banner */}
       <section id="Home" className="pt-10 md:pt-5 ">
-        <div className="container">
-          <div className="flex flex-wrap">
-            <div className="w-full self-center px-4 lg:w-1/2">
-              <h1 className="text2 block font-semibold text-white md:text-xl lg:text-2xl">
-                {" "}
-                Hello,<span className="font1 text-rgblue mt-1  block text-4xl font-bold lg:text-5xl"> I Am Aji Ramdani</span>
-              </h1>
-              <p className="text-secondary mb-5 text-lg font-medium text-white md:mt-2 md:text-sm">
-                Graphic Designer || UI UX Designer || Web Develover
-                <span className="mb-12 block font-bold">
-                  School Majoring In
-                  <span className="text-blue-500">
-                    <Typewriter
-                      options={{
-                        autoStart: true,
-                        loop: true,
-                        delay: 100,
-                        strings: ["Sofware Enginering", "Smks Terpadu Ibadurrahman"],
-                      }}
-                    />
-                  </span>
-                </span>
-              </p>
-              <Popup modal trigger={ <button className="jasa rounded-lg py-3 px-5 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg"> Jasa Design</button>} >
-              {close => <Content close={close} />}
-              </Popup>
-              &nbsp;
-              <a href="https://chat.whatsapp.com/EX1dmwekW0k0PZcHJaxN5R" className="coding-jasa rounded-lg py-3 px-8 text-base font-bold text-white transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg">
-                Jasa Coding
-              </a>
-            </div>{" "}
-            <div className="w-full self-end px-4 lg:w-1/2">
-              <div className=" relative mt-10 lg:right-0 lg:mt-0">
-                <img src={Logo2004} width="800" alt="ARI" className=" z-10 mx-auto max-w-full  " />
-                {/* <span className=" absolute bottom-0 -z-10 pt-2">
-                  {" "}
-                  <img src={Blob} alt="shape" className="mx-auto mt-0 max-w-full " />
-                </span> */}
-              </div>
-            </div>
+        <div className="container bg-slate-800 w-full mt-10 flex content-center items-center justify-center">
+          <div className="text1">
+            <h2>AJI</h2>
+            <h2>RAMDANI</h2>
+          </div>
+          <div className=" lg:w-1/2">
+            <img src={Object} />
+          </div><div className="text2">
+            <h2>JUNIOR</h2>
+            <h2>DEVELOPER</h2>
           </div>
         </div>
       </section>
       {/* end section */}
+
+      
       {/* About section*/}
       <section id="About" className="pt-36 pb-32 md:pt-10">
         <div className="conteiner">
@@ -474,16 +395,16 @@ const Home = () => {
               </a>
             </div>
             <div className="mb-12 p-4 transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg md:w-1/2">
-              <a href={pdf1}>
+              <a href="https://drive.google.com/file/d/1sg9V4PtfASPWPNlb_MQ6vo13YQnTIxxp/view?usp=sharing">
                 <div className="overflow-hidden rounded-md shadow-md">
-                  <img src={C1} alt="landing-coding" width="w-full" />
+                  <img src="https://drive.google.com/uc?export=view&id=1sg9V4PtfASPWPNlb_MQ6vo13YQnTIxxp" alt="landing-coding" width="w-full" />
                 </div>
               </a>
             </div>
             <div className="mb-12 p-4 transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg md:w-1/2">
-              <a href={pdf2}>
+              <a href="https://drive.google.com/file/d/17LNzsuF9fGqPvg_c0O0ihQGl-idjPLjS/view?usp=drive_link">
                 <div className="overflow-hidden rounded-md shadow-md">
-                  <img src={C2} alt="landing-coding" width="w-full" />
+                  <img src="https://drive.google.com/uc?export=view&id=17LNzsuF9fGqPvg_c0O0ihQGl-idjPLjS" alt="landing-coding" width="w-full" />
                 </div>
               </a>
             </div>
