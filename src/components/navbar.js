@@ -1,6 +1,7 @@
 import "../assets/styles.scss";
 import { Link } from "react-scroll";
 
+
 const Navbarari = () => {
   return (
     <div class="navbar bg-black/70 h-1 fixed">

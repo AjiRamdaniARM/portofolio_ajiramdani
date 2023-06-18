@@ -12,7 +12,7 @@ import pdf3 from "../assets/downloads/scg.pdf";
 import pdf4 from "../assets/downloads/stikesmi.pdf";
 import Youtube from "../assets/svg/youtube.svg";
 import "../assets/style2.css";
-import Object from "../assets/image/AJI.png"
+ import Header from "./Header";
 import Icon1 from "../assets/svg/icon1.svg";
 import Icon2 from "../assets/svg/icon2.svg";
 import Icon3 from "../assets/svg/icon3.svg";
@@ -25,45 +25,7 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 // akhir import
 
 const Home = () => {
-  const [loading, setLoading] = useState(undefined);
-  const [done, setDone] = useState(undefined);
-  const [cat, setCat] = useState("");
-
-  useEffect(() => {
-    getCat();
-  }, []);
-
-  const getCat = () => {
-    setLoading(undefined);
-    setDone(undefined);
-    setBuka(false);
-
-    setTimeout(() => {
-      fetch(setBuka(true))
-        .then((res) => res.json())
-        .then((data) => {
-          setCat(data.file);
-          setLoading(true);
-          setTimeout(() => {
-            setDone(true);
-          }, 1000);
-        })
-        .catch((err) => console.log(err));
-    }, 2200);
-  };
-
-  const [open, setOpen] = React.useState(undefined);
-  const [buka, setBuka] = React.useState(undefined);
-  // const handleClickOpen = () => {
-  //   setOpen(true);
-  // };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -107,24 +69,7 @@ const Home = () => {
 
   return (
     <div className="Home">
-      {/* sectiom Banner */}
-      <section id="Home" className="pt-10 md:pt-5 ">
-        <div className="container bg-slate-800 w-full mt-10 flex content-center items-center justify-center">
-          <div className="text1">
-            <h2>AJI</h2>
-            <h2>RAMDANI</h2>
-          </div>
-          <div className=" lg:w-1/2">
-            <img src={Object} />
-          </div><div className="text2">
-            <h2>JUNIOR</h2>
-            <h2>DEVELOPER</h2>
-          </div>
-        </div>
-      </section>
-      {/* end section */}
-
-      
+<Header />
       {/* About section*/}
       <section id="About" className="pt-36 pb-32 md:pt-10">
         <div className="conteiner">
