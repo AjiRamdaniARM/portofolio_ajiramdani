@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 
 const Navbarari = () => {
   return (
-    <div class="navbar bg-black/70 h-1 fixed">
+    <div class="navbar bg-black/70 h-1 fixed ">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">

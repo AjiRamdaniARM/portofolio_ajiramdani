@@ -69,7 +69,7 @@ const Home = () => {
 
   return (
     <div className="Home">
-<Header />
+<Header  />
       {/* About section*/}
       <section id="About" className="pt-36 pb-32 md:pt-10">
         <div className="conteiner">
