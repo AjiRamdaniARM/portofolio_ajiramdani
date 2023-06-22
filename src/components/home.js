@@ -19,6 +19,8 @@ import Icon3 from "../assets/svg/icon3.svg";
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import Slide from "@mui/material/Slide";
+import Card from "./card";
+import CardSkill from "./cadr-skill";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -71,99 +73,13 @@ const Home = () => {
     <div className="Home">
 <Header  />
       {/* About section*/}
-      <section id="About" className="pt-36 pb-32 md:pt-10">
-        <div className="conteiner">
-          <div className="flex flex-wrap">
-            <div className="mb-10 w-full px-4 lg:w-1/2">
-              <h4 className="text- mb-3 font-bold uppercase text-blue-400">About Me</h4>
-              <p className="mb-10 font-medium leading-relaxed text-white ">
-                {" "}
-                I am a student at the Ibadurrahman Integrated Vocational High School and I majored in software engineering, I also attended 2 extra courses, namely Robotics and the IT Club. outside of school hours I always learn about
-                technology and I want to realize my dream of becoming a developer. I have mastered in the fields of graphic design, robotics, content creator, ui/ux design and Front End Development. and I want to learn more in the field
-                that I'm good at
-              </p>
-            </div>{" "}
-            <div className="w-full px-4 lg:w-1/2">
-              <h3 className="text-teman mb-4 text-2xl font-semibold ">Mari Berteman</h3>
-              <p className="mb-6 text-base font-medium text-white lg:text-lg"> let's be good friends so that we can establish closer brotherhood, by following each other on social media. Social media links are below</p>
-              <div className="flex items-center">
-                {/* github */}
-                <a
-                  href="https://github.com/AjiRamdaniARM"
-                  target="_blank"
-                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-gray-300
-                hover:border-teal-500  hover:bg-white "
-                >
-                  <img src={Github} width="20" className="fill-current" />
-                </a>
-                {/* linkdin */}
-                <a
-                  href="https://www.linkedin.com/in/aji-ramdani-ari-016bb1250"
-                  target="_blank"
-                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-gray-300
-                hover:border-teal-500  hover:bg-white "
-                >
-                  <img src={Linkdin} width="20" className="fill-current" />
-                </a>
-                {/* facebook */}
-                <a
-                  href="https://web.facebook.com/sahrucl.kan"
-                  target="_blank"
-                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-gray-300
-                hover:border-teal-500  hover:bg-white "
-                >
-                  <img src={Facebook} width="20" className="fill-current" />
-                </a>
-                {/* twitter */}
-                <a
-                  onClick={() => alert("admin belum mempunyai akun")}
-                  target="_blank"
-                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-gray-300
-                hover:border-teal-500 hover:bg-white "
-                >
-                  <img src={Twitter} width="20" className="fill-current" />
-                </a>
-                {/* youtube */}
-                <a
-                  href="https://www.youtube.com/channel/UCZHCz1m7pBwzDvTe9sC08Yw"
-                  target="_blank"
-                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-gray-300
-                hover:border-teal-500 hover:bg-white "
-                >
-                  <img src={Youtube} width="20" className="fill-current" />
-                </a>
-                {/* instagram */}
-                <a
-                  href="https://www.instagram.com/ajiramdani_04/"
-                  target="_blank"
-                  className="mr-3 flex h-9 w-9 items-center justify-center rounded-full border border-gray-300
-                hover:border-teal-500 hover:bg-white "
-                >
-                  <img src={instgram} width="20" className="fill-current" />
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      {/* end About section*/}
+      <center>
+      <Card />
+      <CardSkill />
+      </center>
+    
       {/* start section */}
-      <section id="portofolio" className=" pt-30 pb-16 md:pt-1">
-        <div className="container">
-          <div className="w-full px-4">
-            <div className="mx-auto mb-16 max-w-xl text-center">
-              <h2 className="text-2xl font-bold text-white md:text-3xl">Skill</h2>
-            </div>
-          </div>
-          <div className="flex w-full flex-wrap justify-center px-4 ">
-            <div className="mb-12 p-4  ">
-              <img src={Icon1} />
-              <img src={Icon2} />
-              <img src={Icon3} />
-            </div>
-          </div>
-        </div>
-      </section>
+      
       {/* project section  */}
       <section className="bg-gray-800 pt-36 pb-32" id="project">
         <div className="container">

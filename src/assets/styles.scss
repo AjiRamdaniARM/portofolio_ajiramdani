@@ -22,7 +22,7 @@ $colorNavy: rgb(11, 114, 113);
 
 
 body {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 // color rgba
 $g-blue: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%, rgba(17, 0, 255, 1) 100%);
@@ -149,9 +149,19 @@ code {
   color: white;
 }
 
-.button-style {
-  background: var(--gradient1);
-}
+
 .font-family {
   font-family:  'Ubuntu';
+}
+.n-font {
+  font-family: 'Roboto-Regular';
+}
+.text1 {
+  color: rgb(0, 98, 255);
+// background: var(--gradient1);
+// -webkit-background-clip: text;
+// -webkit-text-fill-color: transparent;
+}
+.text-card1 {
+  font-family: 'Roboto-Regular';
 }
