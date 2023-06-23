@@ -73,7 +73,7 @@ const Card = () => {
 </dialog>     
   </div>
             </div>
-          
+
         </div>
     )
 }

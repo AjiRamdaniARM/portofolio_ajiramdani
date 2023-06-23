@@ -16,6 +16,7 @@ const Keahlian = () => {
               <img src={Icon1} />
               <img src={Icon2} />
               <img src={Icon3} />
+              
             </div>
           </div>
         </div>

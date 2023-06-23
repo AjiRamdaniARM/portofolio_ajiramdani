@@ -20,6 +20,7 @@ import Slide from "@mui/material/Slide";
 import Card from "./card";
 import CardSkill from "./cadr-skill";
 import Keahlian from "./keahlian";
+import Media from "./mediasosial";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -73,9 +74,11 @@ const Home = () => {
 <Header  />
       {/* About section*/}
       <center>
+      <Media />
       <Card />
       <CardSkill />
       <Keahlian />
+    
       </center>
     
       
