@@ -30,8 +30,9 @@ $g-blue: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%,
 :root {
   --gradient1: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%, rgba(17, 0, 255, 1) 100%);
   --gradient2: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 184, 255, 1) 0%, rgba(0, 255, 196, 1) 100%);
+  --gradient3: linear-gradient(90deg, rgb(30, 69, 5) 0%, rgb(25, 255, 79) 0%, rgb(72, 255, 0) 100%);
 }
-.font1 {
+.font1 {     
   font-family: "font1";
   background: var(--gradient1);
   color: transparent;
@@ -167,4 +168,17 @@ code {
 }
 .text-ahli {
   font-family: 'Roboto-Regular';
+}
+.button-card {
+  background: var(--gradient1);
+
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-card1 {
+  background: var(--gradient3);
+
 }

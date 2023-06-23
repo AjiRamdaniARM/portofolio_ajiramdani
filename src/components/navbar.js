@@ -1,10 +1,12 @@
 import "../assets/styles.scss";
 import { Link } from "react-scroll";
+import Lencana from "../assets/image/Lencana.png";
 import { Player } from '@lottiefiles/react-lottie-player';
 
 
-const Navbarari = () => {
 
+const Navbarari = () => {
+  const wa = "https://api.whatsapp.com/send?phone=6289508742700&text=Halo%20Kak%20Ari%20%F0%9F%91%8B%F0%9F%91%8B";
   return (
     <div class="navbar bg-white h-1 fixed shadow-lg z-10  ">
     <div class="navbar-start">
@@ -25,7 +27,15 @@ const Navbarari = () => {
           Blog</Link></li>
         </ul>
       </div>
-      <a class=" font-bold text-blue-700 ml-5 normal-case text-xl font-family">ARI DEV</a>
+      <button onClick={()=>window.my_modal_5.showModal()} class=" font-bold text-blue-700 ml-5 normal-case text-xl font-family flex"> <img src={Lencana} width={30}/> ARI DEV </button>
+      <dialog id="my_modal_5" className="modal">
+  <form method="dialog" className="modal-box bg-white/70 ">
+  <img src={Lencana} />
+  </form>
+  <form method="dialog" className="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>     
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1 n-font">
@@ -43,18 +53,26 @@ const Navbarari = () => {
     </div>
     <div class="navbar-end">
     <button type="button" data-ripple-light="true" className="btn bg-blue-500 rounded-full text-white w-auto lg:w-40 " onClick={()=>window.my_modal_4.showModal()}>Contact</button>
-<dialog id="my_modal_4" className="modal">
-  <form method="dialog" className="modal-box bg-white shadow-xl ">
-    <h3 className="font-bold text-lg text-black">Contact Us</h3>
+<dialog id="my_modal_4" className="modal bg-black/10 ">
+  <form method="dialog" className="modal-box bg-white shadow-xl  ">
+    <h3 className="font-bold  text-blue-900 text-center text-3xl">CONTACT US</h3>
     <p className="py-4">
     <Player
-    className="lg:w-24"
   autoplay
   loop
   src="https://assets6.lottiefiles.com/packages/lf20_isbiybfh.json"
   style={{ height: '300px', width: '300px' }}
 >
 </Player>
+<div className="button-container"> <a href={wa} className="inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white button-card1 rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+           WhatsApp
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <button onClick='alert("sdsd")' className="inline-flex items-center px-3 py-2 text-lg font-medium text-center text-white button-card rounded-full hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+           Telegram
+            <svg aria-hidden="true" class="w-4 h-4 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </button>
+        </div>
     </p>
   </form>
   <form method="dialog" className="modal-backdrop">
