@@ -13,14 +13,13 @@ import pdf4 from "../assets/downloads/stikesmi.pdf";
 import Youtube from "../assets/svg/youtube.svg";
 import "../assets/style2.css";
  import Header from "./Header";
-import Icon1 from "../assets/svg/icon1.svg";
-import Icon2 from "../assets/svg/icon2.svg";
-import Icon3 from "../assets/svg/icon3.svg";
+
 import Swal from "sweetalert2";
 import emailjs from "@emailjs/browser";
 import Slide from "@mui/material/Slide";
 import Card from "./card";
 import CardSkill from "./cadr-skill";
+import Keahlian from "./keahlian";
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
@@ -76,161 +75,11 @@ const Home = () => {
       <center>
       <Card />
       <CardSkill />
+      <Keahlian />
       </center>
     
-      {/* start section */}
       
-      {/* project section  */}
-      <section className="bg-gray-800 pt-36 pb-32" id="project">
-        <div className="container">
-          <div className="w-full px-4">
-            <div className="mx-auto mb-16 max-w-xl text-center">
-              <h2 className="text-3xl font-bold text-white"> Project</h2>
-              <h4 className="font-medium text-white">Coding || Design Graphic || UI UX Design </h4>
-            </div>
-          </div>
-          <div className="flex w-full flex-wrap justify-center px-4">
-
-            {/* CARD PROGRAMMER */}
-              <div className="Container-card1">
-                
-            
-              <img src="https://media.tenor.com/1mwdqr51emcAAAAM/test-typing.gif" class="w-full object-cover object-center rounded-lg shadow-md" />    
-    <a href="/coding">
-    <div class="relative px-4 -mt-16  ">
-      <div class="card2 p-6 rounded-lg shadow-lg">
-       <div class="flex items-baseline">
-         <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-           Project
-         </span>
-         <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-       2 baths  &bull; 3 rooms
-     </div>  
-       </div>
-       
-       <h4 class="mt-1 text-xl font-semibold uppercase leading-tight  truncate">PROGRAMMER</h4>
-    
-     <div class="mt-1">
-       $1800
-       <span class="text-gray-600 text-sm">   /wk</span>
-     </div>
-     <div class="mt-4">
-       <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-       <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-     </div>  
-     </div>
- 
      
-     </div>
-     </a>
-              </div>
-
-              {/* CARD GRAPHIC DESIGN */}
-              <div className="Container-card1 mt-5">
-                
-            
-                <img src="https://media.tenor.com/pqE49x-P8UIAAAAM/dev-jokes-designer-and-client.gif" class="w-full object-cover object-center rounded-lg shadow-md" />    
-      
-      <div class="relative px-4 -mt-16  ">
-        <div class="card2 p-6 rounded-lg shadow-lg">
-         <div class="flex items-baseline">
-           <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-             New
-           </span>
-           <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-         2 baths  &bull; 3 rooms
-       </div>  
-         </div>
-         
-         <h4 class="mt-1 text-xl font-semibold uppercase leading-tight truncate">GRAPHIC DESIGN</h4>
-      
-       <div class="mt-1">
-         $1800
-         <span class="text-gray-600 text-sm">   /wk</span>
-       </div>
-       <div class="mt-4">
-         <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-         <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-       </div>  
-       </div>
-   
-       
-       </div>
-                </div>
-            <div className="mb-12 p-4 transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg md:w-1/2">
-               {/* CARD UI/UX DSIGN */}
-               <div className="Container-card1">
-                
-            
-                <img src="https://media.tenor.com/dg2ESktyq0wAAAAd/animation-creativedesign.gif" class="w-full object-cover object-center rounded-lg shadow-md" />    
-      <a href="/coding">
-      <div class="relative px-4 -mt-16  ">
-        <div class="card2 p-6 rounded-lg shadow-lg">
-         <div class="flex items-baseline">
-           <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-             Project
-           </span>
-           <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-         2 baths  &bull; 3 rooms
-       </div>  
-         </div>
-         
-         <h4 class="mt-1 text-xl font-semibold uppercase leading-tight  truncate">UI/UX DESIGN</h4>
-      
-       <div class="mt-1">
-         $1800
-         <span class="text-gray-600 text-sm">   /wk</span>
-       </div>
-       <div class="mt-4">
-         <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-         <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-       </div>  
-       </div>
-   
-       
-       </div>
-       </a>
-                </div>
-  
-            </div>
-            <div className="mb-12 p-4 transition duration-300 ease-in-out hover:bg-teal-300 hover:shadow-lg md:w-1/2">
-             {/* CARD UI/UX DSIGN */}
-             <div className="Container-card1">
-                
-            
-                <img src="https://media.tenor.com/4dVRDZYVx2gAAAAd/robot.gif" class="w-full object-cover object-center rounded-lg shadow-md" />    
-      <a href="/coding">
-      <div class="relative px-4 -mt-16  ">
-        <div class="card2 p-6 rounded-lg shadow-lg">
-         <div class="flex items-baseline">
-           <span class="bg-teal-200 text-teal-800 text-xs px-2 inline-block rounded-full  uppercase font-semibold tracking-wide">
-             Project
-           </span>
-           <div class="ml-2 text-gray-600 uppercase text-xs font-semibold tracking-wider">
-         2 baths  &bull; 3 rooms
-       </div>  
-         </div>
-         
-         <h4 class="mt-1 text-xl font-semibold uppercase leading-tight  truncate">ROBOTIK</h4>
-      
-       <div class="mt-1">
-         $1800
-         <span class="text-gray-600 text-sm">   /wk</span>
-       </div>
-       <div class="mt-4">
-         <span class="text-teal-600 text-md font-semibold">4/5 ratings </span>
-         <span class="text-sm text-gray-600">(based on 234 ratings)</span>
-       </div>  
-       </div>
-   
-       
-       </div>
-       </a>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
       {/* section certificate */}
       <section className="bg-gray-700 pt-36 pb-32" id="certificate">
         <div className="container">

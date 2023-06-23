@@ -1,10 +1,12 @@
 import "../assets/styles.scss";
 import { Link } from "react-scroll";
+import { Player } from '@lottiefiles/react-lottie-player';
 
 
 const Navbarari = () => {
+
   return (
-    <div class="navbar bg-white h-1 fixed shadow-lg  ">
+    <div class="navbar bg-white h-1 fixed shadow-lg z-10  ">
     <div class="navbar-start">
       <div class="dropdown">
         <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -33,15 +35,35 @@ const Navbarari = () => {
         <Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
           Project</Link>
         </li>&nbsp;
-        <li> <Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
+        <li> <Link to="keahlian" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
           Keahlian</Link></li>&nbsp;&nbsp;
-        <li> <Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
-          Bloggger</Link></li>
+        <li> <Link to="aplikasi" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
+          Aplikasi</Link></li>
       </ul>
     </div>
     <div class="navbar-end">
-      <a class="btn bg-blue-500 rounded-full text-white w-auto lg:w-40  ">Contact</a>
+    <button type="button" data-ripple-light="true" className="btn bg-blue-500 rounded-full text-white w-auto lg:w-40 " onClick={()=>window.my_modal_4.showModal()}>Contact</button>
+<dialog id="my_modal_4" className="modal">
+  <form method="dialog" className="modal-box bg-white shadow-xl ">
+    <h3 className="font-bold text-lg text-black">Contact Us</h3>
+    <p className="py-4">
+    <Player
+    className="lg:w-24"
+  autoplay
+  loop
+  src="https://assets6.lottiefiles.com/packages/lf20_isbiybfh.json"
+  style={{ height: '300px', width: '300px' }}
+>
+</Player>
+    </p>
+  </form>
+  <form method="dialog" className="modal-backdrop">
+    <button>close</button>
+  </form>
+</dialog>     
+     
     </div>
+   
   </div>
   
          

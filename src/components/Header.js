@@ -29,7 +29,6 @@ const profesi = "JUNIOR DEVELOPER";
         </div>
       </div>
     </section>
-    
     )  
 }
 
