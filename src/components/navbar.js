@@ -42,7 +42,7 @@ const Navbarari = () => {
         <li> <Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-blue-700">
           Beranda</Link></li>&nbsp;
         <li>
-        <Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
+        <Link to="project" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
           Project</Link>
         </li>&nbsp;
         <li> <Link to="keahlian" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
