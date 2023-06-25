@@ -86,8 +86,7 @@ const Project = () => {
       </CardBody>
     </Card>
     </a>
-
-<a href={link2} >	
+                        
     <Card
       shadow={false}
       className="relative grid h-[40rem] w-full max-w-[23rem] items-end justify-center overflow-hidden text-center mb-2"
@@ -120,7 +119,7 @@ const Project = () => {
         />
       </CardBody>
     </Card>
-</a>
+
 
     <Card
       shadow={false}
