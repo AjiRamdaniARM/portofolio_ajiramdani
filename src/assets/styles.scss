@@ -34,7 +34,9 @@ $g-blue: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%,
 :root {
   --gradient1: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%, rgba(17, 0, 255, 1) 100%);
   --gradient2: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 184, 255, 1) 0%, rgba(0, 255, 196, 1) 100%);
+  --gradient5: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgb(255, 25, 243) 0%, rgb(160, 2, 181) 100%);
   --gradient3: linear-gradient(90deg, rgb(30, 69, 5) 0%, rgb(25, 255, 79) 0%, rgb(72, 255, 0) 100%);
+  --colorGradient: linear-gradient(90deg, rgba(8,129,255,1) 0%, rgba(0,237,214,1) 100%); ;
 }
 .font1 {     
   font-family: "font1";
@@ -54,6 +56,11 @@ $g-blue: linear-gradient(90deg, rgba(30, 0, 36, 1) 0%, rgba(25, 255, 245, 1) 0%,
   background-clip: text;
   -webkit-background-clip: text;
   letter-spacing: 10px;
+}
+.text-gradient-w1 {
+  background: var(--colorGradient);
+  background-clip: text;
+  color: transparent;
 }
 .active {
   background-color: rgb(7, 130, 238);
@@ -174,7 +181,7 @@ code {
   font-family: 'Roboto-Regular';
 }
 .button-card {
-  background: var(--gradient1);
+  background: var(--gradient5);
 
 }
 .button-container {

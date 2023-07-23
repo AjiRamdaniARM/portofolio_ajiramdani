@@ -84,8 +84,8 @@ const tiktok = "https://www.tiktok.com/@ajiramdani_ari";
         <h6 className="ml-3 font-bold text-white">Tiktok</h6>
         </div></a></center>
   </form>
-  <form method="dialog" className="modal-backdrop">
-    <button>close</button>
+  <form method="dialog" className="text-white text-bold text-2xl">
+    <button>Keluar</button>
   </form>
 </dialog>  
     </section>
