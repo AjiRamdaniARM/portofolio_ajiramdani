@@ -14,17 +14,19 @@ const Navbarari = () => {
         <label tabindex="0" class="btn btn-ghost lg:hidden">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
         </label>
-        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+        <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 p-2  bg-white shadow-xl rounded-box w-52 ">
           <li>
             <ul class="p-2">
-              <li><Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-white">
-          Skill</Link></li>
-              <li><Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-white">
-          Blog</Link></li>
+              <li><Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-black hover:text-blue-700">
+          Beranda</Link></li>
+              <li><Link to="project" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-black hover:text-blue-700">
+          Projcet</Link></li>
             </ul>
           </li>
-          <li><Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-white">
-          Blog</Link></li>
+          <li><Link to="keahlian" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-black hover:text-blue-700">
+          Keahlian</Link></li>
+          <li><Link to="aplikasi" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-black hover:text-blue-700">
+          Aplikasi</Link></li>
         </ul>
       </div>
       <button onClick={()=>window.my_modal_5.showModal()} class=" font-bold text-blue-700 ml-5 normal-case text-xl font-family flex"> <img src={Lencana} width={30}/> ARI DEV </button>
@@ -39,15 +41,15 @@ const Navbarari = () => {
     </div>
     <div class="navbar-center hidden lg:flex">
       <ul class="menu menu-horizontal px-1 n-font">
-        <li> <Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-blue-700">
+        <li> <Link to="Home" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-gray-700 hover:text-blue-700">
           Beranda</Link></li>&nbsp;
         <li>
-        <Link to="project" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
+        <Link to="project" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-gray-700 hover:text-blue-700">
           Project</Link>
         </li>&nbsp;
-        <li> <Link to="keahlian" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
+        <li> <Link to="keahlian" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-gray-700 hover:text-blue-700">
           Keahlian</Link></li>&nbsp;&nbsp;
-        <li> <Link to="aplikasi" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center  text-blue-700">
+        <li> <Link to="aplikasi" className=" flex h-[60px] w-[60px] cursor-pointer items-center justify-center text-gray-700 hover:text-blue-700">
           Aplikasi</Link></li>
       </ul>
     </div>
