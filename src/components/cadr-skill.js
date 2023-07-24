@@ -208,7 +208,7 @@ const CardSkill = () => {
 
 
 
-</Carousel>;
+</Carousel>
             </div>
     )
 }

@@ -24,7 +24,7 @@ const Card = () => {
                 <button type="button" data-ripple-light="true" className="btn select-none rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-black hover:text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-yellow-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" onClick={()=>window.my_modal_3.showModal()}>Read More</button>
 <dialog id="my_modal_3" className="modal">
   <form method="dialog" className="modal-box ">
-    <h3 className="font-bold text-lg">Visi Saya</h3>
+    <h3 className="font-bold text-lg text-white">Visi Saya</h3>
     <p className="py-4">
     <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400 block font-sans text-base font-light leading-relaxed text-inherit antialiased">
                         <li>Menjadi <color className='text-yellow-500 font-bold'>pengusaha sukses</color> yang perusahaannya dikenal di nasional sampai mancanegara.</li>
@@ -57,7 +57,7 @@ const Card = () => {
              <button type="button" data-ripple-light="true" className="btn select-none rounded-lg bg-yellow-500 py-3 px-6 text-center align-middle font-sans text-xs font-bold uppercase text-black hover:text-white shadow-md shadow-pink-500/20 transition-all hover:shadow-lg hover:shadow-pink-500/40 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" onClick={()=>window.my_modal_2.showModal()}>Read More</button>
 <dialog id="my_modal_2" className="modal">
   <form method="dialog" className="modal-box ">
-    <h3 className="font-bold text-lg">Misi Saya</h3>
+    <h3 className="font-bold text-lg text-white">Misi Saya</h3>
     <p className="py-4">
     <ul className="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400 block font-sans text-base font-light leading-relaxed text-inherit antialiased">
                         <li><color className='text-yellow-500 font-bold'>Aktif di organisasi</color> untuk belajar bagaimana cara menerapkan manajemen dengan baik.</li>
