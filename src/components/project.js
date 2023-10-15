@@ -32,7 +32,7 @@ const Project = () => {
     const link1 = "https://play.google.com/store/apps/details?id=com.itclovers.aplikasi&hl=id&gl=US";
 	const link2 = "https://www.figma.com/proto/n9ivtIyjE7V9pvuMHSA1ng/Untitled?page-id=14%3A8&type=design&node-id=14-9&viewport=3043%2C-1931%2C1.72&scaling=scale-down&starting-point-node-id=112%3A516";
   const link3 =" https://www.mediafire.com/file/xwjzltaqvhgpusk/nasa_kita.apk/file";
-  const link4 =" ";
+  const link4 =" https://github.com/AjiRamdaniARM/Remake-web-SubaArch";
     return(
         <div id="project" className="Project-halaman m-1">
             <div className="block p-5 ">
@@ -165,6 +165,43 @@ const Project = () => {
       </CardBody>
     </Card></a>
     {/* akhir project ketiga */}
+
+
+    {/* project keempat */}
+<a href={link4} >
+    <Card
+      shadow={false}
+      className="relative grid h-[40rem] w-full max-w-[23rem] items-end justify-center overflow-hidden text-center "
+    >
+      <CardHeader
+        floated={false}
+        shadow={false}
+        color="transparent"
+        className="absolute inset-0 m-0 h-full w-full rounded-none bg-[url('https://drive.google.com/uc?export=view&id=1MWaKHhV8E6DO_pps7q0JrqznnOA3iQw6')] bg-cover bg-center"
+      >
+        <div className="to-bg-black-10 absolute inset-0 h-full w-full bg-gradient-to-t from-black/80 via-black/50" />
+      </CardHeader>
+      <CardBody className="relative py-14 px-6 md:px-12">
+        <Typography
+          variant="h2"
+          color="white"
+          className="mb-6 font-medium leading-[1.5]"
+        >
+         Project Remake Aplikasi Website SubaArch
+        </Typography>
+        <Typography variant="h5" className="mb-4 text-gray-400">
+        ARI Dev
+        </Typography>
+        <Avatar
+          size="xl"
+          variant="circular"
+          alt="SUBA ARCH"
+          className="border-2 border-white"
+          src="https://drive.google.com/uc?export=view&id=1hU1fCdNgBncdbvdBHX0QBNCNx5wAsy42"
+        />
+      </CardBody>
+    </Card></a>
+    {/* akhir project keempat */}
 
     {/* <Card
       shadow={false}

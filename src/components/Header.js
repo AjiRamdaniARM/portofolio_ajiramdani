@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/styles.scss";
-import Object from "../assets/image/AJI.png"
+import Object from "../assets/image/aji.png"
 
 
 
